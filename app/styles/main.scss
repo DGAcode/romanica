@@ -1,5 +1,28 @@
 // bower:scss
 // endbower
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('montserrat-regular-webfont.eot');
+  src: url('montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff'), url('montserrat-regular-webfont.ttf') format('truetype'), url('montserrat-regular-webfont.svg#montserratregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('opensans-regular-webfont.eot');
+  src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('opensans-regular-webfont.woff2') format('woff2'), url('opensans-regular-webfont.woff') format('woff'), url('opensans-regular-webfont.ttf') format('truetype'), url('opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -501,22 +524,6 @@ textarea {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('montserrat-regular-webfont.eot');
-  src: url('montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff'), url('montserrat-regular-webfont.ttf') format('truetype'), url('montserrat-regular-webfont.svg#montserratregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('opensans-regular-webfont.eot');
-  src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('opensans-regular-webfont.woff2') format('woff2'), url('opensans-regular-webfont.woff') format('woff'), url('opensans-regular-webfont.ttf') format('truetype'), url('opensans-regular-webfont.svg#open_sansregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body.overflow-hidden {
   overflow: hidden;
 }
@@ -959,12 +966,12 @@ dd {
   font-weight: 600;
 }
 
-.contact-content dd + dt::before {
+.contact-content dd+ dt::before {
   content: "\A";
   white-space: pre;
 }
 
-.contact-content dd + dd::before {
+.contact-content dd+ dd::before {
   content: ', ';
   font-weight: normal;
   margin-left: -.25em;
